@@ -2,6 +2,7 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import movie.CheckMovie;
+import movie.CreateFile;
 import movie.Movie;
 
 import java.io.FileWriter;
@@ -22,17 +23,12 @@ public class Main {
          var search = data.nextLine();
         System.out.println("-------------------------------------");
 
-        Gson gso = new GsonBuilder()
-                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                .setPrettyPrinting()
-                .create();
+
         CheckMovie checkMovie = new CheckMovie();
         Movie movie = checkMovie.getMovie(search);
         System.out.println(movie.toString());
+        CreateFile createFile = new CreateFile();
+        createFile.createFile(movie);
 
-
-        FileWriter write = new FileWriter("movie.json");
-        write.write(gso.toJson(movie));
-        write.close();
     }
 }
