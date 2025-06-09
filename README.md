@@ -25,7 +25,7 @@
   "createdBy": "ajppepe"
 }
 ```
-### 📥 Response (200) - createBrand
+### 📥 Response - createBrand
 ```json
 {
   "code": "200",
