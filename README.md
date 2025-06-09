@@ -61,41 +61,50 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 
 ---
 
+### Ejemplos de casos de error en createBrand
+
+| **Tipo de Error**             | **Descripción**                            | **Request invalido**                                             | **Response de error esperado**                                     |
+| ----------------------------- | ------------------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Campos obligatorios faltantes | El request no incluye campos obligatorios  | [Ver JSON Request](#request---campos---obligatorios---faltantes) | [Ver JSON Response](#response---campos---obligatorios---faltantes) |
+| Formato inválido              | Campos con formato incorrecto              | [Ver JSON Request](#request---invalide---createbrand)            | [Ver JSON Response](#response---invalide---createbrand)            |
+| Valores fuera de rango        | Valores numéricos fuera del rango esperado | [Ver JSON Request](#request---invalide---createbrand)            | [Ver JSON Response](#response---invalide---createbrand)            |
+
 ---
+### Error 1: Campos obligatorios faltantes
 
-### Ejemplos de casos de error
-
-| **Servicio**                 | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
-| ---------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
-| `svc-rewards-co-createbrand` | `createBrand`     | [Ver JSON Request](#request---invalide---createbrand) | [Ver JSON Response](#response---invalide---createbrand) |
-
----
-
-### Request - invalide - createBrand
+### Request - campos - obligatorios - faltantes
 
 ```json
 {
-    "merchantId": "99999",
-    "name": "Nike",
-    "description": "Test",
-    "logo": "https://logo",
-    "cover": "https://cover",
-    "fyf": { "active": false },
-    "priority": 1,
-    "score": 50,
-    "createdBy": "ajppepe"
- }
- ```
- ### Request - createBrand
- ---
+  "description": "Test",
+  "logo": "https://logo",
+  "cover": "https://cover",
+  "fyf": { "active": false },
+  "priority": 1,
+  "score": 50,
+  "createdBy": "ajppepe"
+}
+```
 
- ### Response - invalide - createBrand
+---
 
-```json 
-{ "code": "404",
- "message": "Merchant not found", 
- "messageId": "error123" 
- } 
- ```  
- --- 
+### Response - campos - obligatorios - faltantes
 
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": "merchantId",
+      "message": "El campo merchantId es obligatorio"
+    },
+    {
+      "field": "name",
+      "message": "El campo name es obligatorio"
+    }
+  ]
+}
+```
+
+---
