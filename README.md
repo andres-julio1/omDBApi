@@ -66,7 +66,7 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 | ----------------------------- | ------------------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Campos obligatorios faltantes | El request no incluye campos obligatorios  | [Ver JSON Request](#request---campos---obligatorios---faltantes) | [Ver JSON Response](#response---campos---obligatorios---faltantes) |
 | Formato inválido              | Campos con formato incorrecto              | [Ver JSON Request](#request---formato---inválido)                | [Ver JSON Response](#response---formato---inválido)                |
-| Valores fuera de rango        | Valores numéricos fuera del rango esperado | [Ver JSON Request](#request---invalide---createbrand)            | [Ver JSON Response](#response---invalide---createbrand)            |
+| Valores fuera de rango        | Valores numéricos fuera del rango esperado | [Ver JSON Request](#request---valores---fuera---de---rango)      | [Ver JSON Response](#response---valores---fuera---de---rango)      |
 
 ---
 
@@ -85,7 +85,6 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   "createdBy": "ajppepe"
 }
 ```
-
 ---
 
 ### Response - campos - obligatorios - faltantes
@@ -106,7 +105,6 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   ]
 }
 ```
-
 ---
 
 ### Error 2: Formato inválido en URLs
@@ -126,7 +124,6 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   "createdBy": "ajppepe"
 }
 ```
-
 ---
 
 ### Response - formato - inválido
@@ -144,6 +141,37 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 }
 ```
 ---
+
 ### Error 3: Valores numéricos fuera de rango
 
-### Request - Valores - fuera - de - rango 
+### Request - valores - fuera - de - rango
+
+```json
+{
+  "merchantId": "23015",
+  "name": "Nike",
+  "description": "Test",
+  "logo": "no-es-una-url",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
+  "priority": -1,
+  "score": 50.0,
+  "createdBy": "ajppepe"
+}
+```
+
+### Response - valores - fuera - de - rango
+
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": "priority",
+      "message": "El campo priority debe ser un número positivo, con rango (0-15)"
+    }
+  ]
+}
+```
+---
