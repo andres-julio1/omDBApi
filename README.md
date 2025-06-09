@@ -60,16 +60,16 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 ```
 
 ---
-
 ### Ejemplos de casos de error en createBrand
 
 | **Tipo de Error**             | **Descripción**                            | **Request invalido**                                             | **Response de error esperado**                                     |
 | ----------------------------- | ------------------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Campos obligatorios faltantes | El request no incluye campos obligatorios  | [Ver JSON Request](#request---campos---obligatorios---faltantes) | [Ver JSON Response](#response---campos---obligatorios---faltantes) |
-| Formato inválido              | Campos con formato incorrecto              | [Ver JSON Request](#request---invalide---createbrand)            | [Ver JSON Response](#response---invalide---createbrand)            |
+| Formato inválido              | Campos con formato incorrecto              | [Ver JSON Request](#request---formato---inválido)                | [Ver JSON Response](#response---formato---inválido)                |
 | Valores fuera de rango        | Valores numéricos fuera del rango esperado | [Ver JSON Request](#request---invalide---createbrand)            | [Ver JSON Response](#response---invalide---createbrand)            |
 
 ---
+
 ### Error 1: Campos obligatorios faltantes
 
 ### Request - campos - obligatorios - faltantes
@@ -77,11 +77,11 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 ```json
 {
   "description": "Test",
-  "logo": "https://logo",
-  "cover": "https://cover",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/valid.svg",
   "fyf": { "active": false },
   "priority": 1,
-  "score": 50,
+  "score": 50.0,
   "createdBy": "ajppepe"
 }
 ```
@@ -108,3 +108,42 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 ```
 
 ---
+
+### Error 2: Formato inválido en URLs
+
+### Request - formato - inválido
+
+```json
+{
+  "merchantId": "23015",
+  "name": "Nike",
+  "description": "Test",
+  "logo": "no-es-una-url",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
+  "priority": 1,
+  "score": 50.0,
+  "createdBy": "ajppepe"
+}
+```
+
+---
+
+### Response - formato - inválido
+
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": "logo",
+      "message": "El campo logo debe ser una URL válida"
+    }
+  ]
+}
+```
+---
+### Error 3: Valores numéricos fuera de rango
+
+### Request - Valores - fuera - de - rango 
