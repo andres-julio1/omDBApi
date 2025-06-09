@@ -5,7 +5,7 @@
 
 | **Servicio** | **Funcionalidad** | **Request válido** | **Response exitoso** |
 |--------------|-------------------|--------------------|----------------------|
-| `svc-rewards-co-createbrand` | `POST /api/v1/brands` | [Ver JSON Request](#request-createbrand) | [Ver JSON Response](#response-createbrand) |
+| `svc-rewards-co-createbrand` | `POST /api/v1/brands` | [Ver JSON Request](#request---createbrand) | [Ver JSON Response](#response---createbrand) |
 
 ---
 
