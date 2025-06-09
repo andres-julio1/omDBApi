@@ -10,9 +10,9 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 **URL:**  
 `http://localhost:8080/api/v1/brands`
 
-| **Servicio**                 | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
-| ---------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
-| `svc-rewards-co-createbrand` | `createBrand`     | [Ver JSON Request](#request---createbrand) | [Ver JSON Response](#response---createbrand) |
+| **Servicio**                      | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
+| --------------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
+| `svc-virtualstore-co-manager-pdn` | `createBrand`     | [Ver JSON Request](#request---createbrand) | [Ver JSON Response](#response---createbrand) |
 
 ---
 
