@@ -61,3 +61,41 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 
 ---
 
+---
+
+### Ejemplos de casos de error
+
+| **Servicio**                 | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
+| ---------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
+| `svc-rewards-co-createbrand` | `createBrand`     | [Ver JSON Request](#request---invalide---createbrand) | [Ver JSON Response](#response---invalide---createbrand) |
+
+---
+
+### Request - invalide - createBrand
+
+```json
+{
+    "merchantId": "99999",
+    "name": "Nike",
+    "description": "Test",
+    "logo": "https://logo",
+    "cover": "https://cover",
+    "fyf": { "active": false },
+    "priority": 1,
+    "score": 50,
+    "createdBy": "ajppepe"
+ }
+ ```
+ ### Request - createBrand
+ ---
+
+ ### Response - invalide - createBrand
+
+```json 
+{ "code": "404",
+ "message": "Merchant not found", 
+ "messageId": "error123" 
+ } 
+ ```  
+ --- 
+
