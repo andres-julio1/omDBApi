@@ -5,7 +5,7 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ---
 
-### Ejemplo de creación de marcas (`createBrand`)
+### Ejemplo de createBrand
 
 | **Servicio**                 | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
 | ---------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
@@ -23,7 +23,8 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
   "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
   "cover": "https://cdn.example.com/covers/merchant123-cover.svg",
   "fyf": {
-    "active": false
+    "active": false,
+    "numbers": ["1234567891", "1239567896"]
   },
   "priority": 5,
   "score": 80,
@@ -50,7 +51,7 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
     "benefits": null,
     "fyf": {
       "active": false,
-      "numbers": null
+      "numbers": ["3134356789", "3204567890"]
     },
     "priority": 5,
     "score": 80.0,
@@ -65,9 +66,9 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ---
 
-### Ejemplos de casos de error (`createBrand`)
+### Ejemplos de casos de error en createBrand
 
-| **Tipo de Error**              | **Descripción**                                         | **Request invalido**                                                | **Response de error esperado**                                        |
+| **Tipo de error**              | **Breve descripción**                                   | **Request inválido**                                                | **Response de error esperado**                                        |
 | ------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | Campos obligatorios faltantes  | El request no incluye campos obligatorios               | [Ver JSON Request](#request---campos---obligatorios---faltantes)    | [Ver JSON Response](#response---campos---obligatorios---faltantes)    |
 | Formato inválido               | Campos con formato incorrecto                           | [Ver JSON Request](#request---formato---inválido)                   | [Ver JSON Response](#response---formato---inválido)                   |
