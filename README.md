@@ -1,15 +1,17 @@
-## Ejemplo de transacción exitosa - Endpoint: Crear categoría (createBrand)
+# 4. TROUBLESHOOTING
 
-**URL:**  
-`http://localhost:8080/api/v1/brands`
+4.1 **Ejemplo de transacción exitosa: Crear categoría (createBrand)**
+_Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo ideal es entender cuál es la correcta construcción de cada request y cómo es un response correcto. En lo posible, indicar las posibles pruebas funcionales del servicio_
+<br>
 
-| **Servicio** | **Funcionalidad** | **Request válido** | **Response exitoso** |
-|--------------|-------------------|--------------------|----------------------|
-| `svc-rewards-co-createbrand` | `POST /api/v1/brands` | [Ver JSON Request](#request---createbrand) | [Ver JSON Response](#response---createbrand) |
+| **Servicio**                 | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
+| ---------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
+| `svc-rewards-co-createbrand` | `createBrand`     | [Ver JSON Request](#request---createbrand) | [Ver JSON Response](#response---createbrand) |
 
 ---
 
 ### Request - createBrand
+
 ```json
 {
   "merchantId": "23015",
@@ -25,8 +27,11 @@
   "createdBy": "ajppepe"
 }
 ```
+---
 ### Response - createBrand
+
 ```json
+
 {
   "code": "200",
   "message": "SUCCESS",
@@ -53,4 +58,6 @@
   }
 }
 ```
+
+---
 
