@@ -9,7 +9,7 @@
 
 ---
 
-### 📤 Request - createBrand
+### Request - createBrand
 ```json
 {
   "merchantId": "23015",
@@ -25,7 +25,7 @@
   "createdBy": "ajppepe"
 }
 ```
-### 📥 Response - createBrand
+### Response - createBrand
 ```json
 {
   "code": "200",
