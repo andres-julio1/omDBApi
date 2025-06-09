@@ -247,9 +247,9 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ### Error 5: Tipo de dato incorrecto
 
-**Body**
-
 ### Request - tipo - de - dato - incorrecto
+
+**Body**
 
 ```json
 {
@@ -286,9 +286,9 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ### Error 6: JSON mal formado
 
-**Body**
-
 ### Request - JSON - mal - formado
+
+**Body**
 
 ```json
 {
