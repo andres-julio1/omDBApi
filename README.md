@@ -62,11 +62,12 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 ---
 ### Ejemplos de casos de error en createBrand
 
-| **Tipo de Error**             | **Descripción**                            | **Request invalido**                                             | **Response de error esperado**                                     |
-| ----------------------------- | ------------------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Campos obligatorios faltantes | El request no incluye campos obligatorios  | [Ver JSON Request](#request---campos---obligatorios---faltantes) | [Ver JSON Response](#response---campos---obligatorios---faltantes) |
-| Formato inválido              | Campos con formato incorrecto              | [Ver JSON Request](#request---formato---inválido)                | [Ver JSON Response](#response---formato---inválido)                |
-| Valores fuera de rango        | Valores numéricos fuera del rango esperado | [Ver JSON Request](#request---valores---fuera---de---rango)      | [Ver JSON Response](#response---valores---fuera---de---rango)      |
+| **Tipo de Error**              | **Descripción**                            | **Request invalido**                                             | **Response de error esperado**                                     |
+| ------------------------------ | ------------------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Campos obligatorios faltantes  | El request no incluye campos obligatorios  | [Ver JSON Request](#request---campos---obligatorios---faltantes) | [Ver JSON Response](#response---campos---obligatorios---faltantes) |
+| Formato inválido               | Campos con formato incorrecto              | [Ver JSON Request](#request---formato---inválido)                | [Ver JSON Response](#response---formato---inválido)                |
+| Valores fuera de rango         | Valores numéricos fuera del rango esperado | [Ver JSON Request](#request---valores---fuera---de---rango)      | [Ver JSON Response](#response---valores---fuera---de---rango)      |
+| Estructura inválida en objetos | Campos anidados con estructura o tipos erróneos | [Ver JSON Request](#request---estructura---inválida---en---objetos) | [Ver JSON Response](#response---estructura---inválida---en---objetos)      |
 
 ---
 
@@ -85,6 +86,7 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   "createdBy": "ajppepe"
 }
 ```
+
 ---
 
 ### Response - campos - obligatorios - faltantes
@@ -105,6 +107,7 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   ]
 }
 ```
+
 ---
 
 ### Error 2: Formato inválido en URLs
@@ -124,6 +127,7 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   "createdBy": "ajppepe"
 }
 ```
+
 ---
 
 ### Response - formato - inválido
@@ -140,6 +144,7 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   ]
 }
 ```
+
 ---
 
 ### Error 3: Valores numéricos fuera de rango
@@ -160,6 +165,8 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 }
 ```
 
+---
+
 ### Response - valores - fuera - de - rango
 
 ```json
@@ -173,5 +180,37 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
     }
   ]
 }
+```
+---
+### Error 4: Estructura inválida en objetos
+
+#### Request - estructura - inválida - en - objetos
+```json
+{
+  "merchantId": "23015",
+  "name": "Nike",
+  "description": "Test",
+  "logo": "no-es-una-url",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": "Información sobre Friends and Family",
+  "priority": -1,
+  "score": 50.0,
+  "createdBy": "ajppepe"
+}
+```
+---
+#### Response - estructura - inválida - en - objetos
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": "fyf",
+      "message": "El campo fyf debe ser un objeto con propiedades válidas"
+    }
+  ]
+}
+
 ```
 ---
