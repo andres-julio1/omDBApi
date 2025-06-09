@@ -86,7 +86,6 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   "createdBy": "ajppepe"
 }
 ```
-
 ---
 
 ### Response - campos - obligatorios - faltantes
@@ -107,7 +106,6 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   ]
 }
 ```
-
 ---
 
 ### Error 2: Formato inválido en URLs
@@ -127,7 +125,6 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   "createdBy": "ajppepe"
 }
 ```
-
 ---
 
 ### Response - formato - inválido
@@ -144,7 +141,6 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   ]
 }
 ```
-
 ---
 
 ### Error 3: Valores numéricos fuera de rango
@@ -164,7 +160,6 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
   "createdBy": "ajppepe"
 }
 ```
-
 ---
 
 ### Response - valores - fuera - de - rango
@@ -182,9 +177,11 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 }
 ```
 ---
+
 ### Error 4: Estructura inválida en objetos
 
-#### Request - estructura - inválida - en - objetos
+### Request - estructura - inválida - en - objetos
+
 ```json
 {
   "merchantId": "23015",
@@ -199,7 +196,9 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
 }
 ```
 ---
-#### Response - estructura - inválida - en - objetos
+
+### Response - estructura - inválida - en - objetos
+
 ```json
 {
   "code": "400",
@@ -211,6 +210,5 @@ _Incluir ejemplos de transacciones exitosas o enlaces a esta información, lo id
     }
   ]
 }
-
 ```
 ---
