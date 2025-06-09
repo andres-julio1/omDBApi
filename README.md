@@ -1,8 +1,11 @@
 # 4. TROUBLESHOOTING
 
-4.1 **Ejemplo de transacción exitosa: Crear categoría (createBrand)**
-Incluir ejemplos de transacciones exitosas y enlaces a esta información, para entender la correcta construcción de cada request y cómo es un response correcto. También se indican posibles pruebas funcionales del servicio para validar su correcto funcionamiento.
-<br>
+4.1 **Ejemplo de creación exitosa y casos de errores: Marcas (createBrand)**
+Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta información para entender la correcta construcción de cada request y cómo es un response correcto. También se indican posibles pruebas funcionales del servicio para validar su correcto funcionamiento.
+
+---
+
+### Ejemplo de creación de marcas (`createBrand`)
 
 | **Servicio**                 | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
 | ---------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
@@ -62,7 +65,7 @@ Incluir ejemplos de transacciones exitosas y enlaces a esta información, para e
 
 ---
 
-### Ejemplos de casos de error en createBrand
+### Ejemplos de casos de error (`createBrand`)
 
 | **Tipo de Error**              | **Descripción**                                         | **Request invalido**                                                | **Response de error esperado**                                        |
 | ------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
