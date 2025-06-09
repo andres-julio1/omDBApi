@@ -5,7 +5,10 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ---
 
-### Ejemplo de createBrand
+### Ejemplo de creación existosa - Endpoint: Crear marcas (createBrand)
+
+**URL:**  
+`http://localhost:8080/api/v1/brands`
 
 | **Servicio**                 | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
 | ---------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
@@ -14,6 +17,8 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 ---
 
 ### Request - createBrand
+
+**Body**
 
 ```json
 {
@@ -85,6 +90,8 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ### Request - campos - obligatorios - faltantes
 
+**Body**
+
 ```json
 {
   "name": "",
@@ -125,6 +132,8 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ### Request - formato - inválido
 
+**Body**
+
 ```json
 {
   "merchantId": "23015",
@@ -161,6 +170,8 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 ### Error 3: Valores numéricos fuera de rango
 
 ### Request - valores - fuera - de - rango
+
+**Body**
 
 ```json
 {
@@ -199,6 +210,8 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ### Request - estructura - inválida - en - objetos
 
+**Body**
+
 ```json
 {
   "merchantId": "23015",
@@ -233,6 +246,8 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 ---
 
 ### Error 5: Tipo de dato incorrecto
+
+**Body**
 
 ### Request - tipo - de - dato - incorrecto
 
@@ -271,6 +286,8 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ### Error 6: JSON mal formado
 
+**Body**
+
 ### Request - JSON - mal - formado
 
 ```json
@@ -306,9 +323,11 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ---
 
-### Error 6: El recurso ya existe
+### Error 7: El recurso ya existe
 
 ### Request - el - recurso - ya - existe
+
+**Body**
 
 ```json
 {
@@ -343,9 +362,11 @@ Incluye ejemplos de creación exitosa, casos de errores y enlaces a esta informa
 
 ---
 
-### Error 6: Interno del servidor
+### Error 8: Interno del servidor
 
 ### Request - interno - del - servidor
+
+**Body**
 
 ```json
 {
