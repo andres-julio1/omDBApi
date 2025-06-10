@@ -1,12 +1,10 @@
-# 4. Documentación de servicios (endpoints)
+# 4. Documentación de servicios (`endpoints`)
+
 En esta sección se describen ejemplos de creación exitosa y los principales casos de error para el endpoint **`createBrand`**. También se proporcionan enlaces a cada tipo de request y response para facilitar las pruebas funcionales y la correcta construcción de los requests.
 
 ---
 
-### 4.1 Ejemplo de creación exitosa - Endpoint: Marcas (createBrand)
-
-**URL:**  
-`http://localhost:8080/api/v1/brands`
+### 4.1 Crear marcas endpoint (`createBrand`)
 
 | **Servicio**                      | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
 | --------------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
@@ -16,9 +14,17 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ## Sección detallada de creación
 
+**URL:**
+
+```http
+POST http://localhost:8080/api/v1/brands
+```
+
+---
+
 ### Request - createBrand
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -40,6 +46,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ---
 
 ### Response - createBrand
+
+**Response code:**  
+`200 OK`
+
+**Response body:**
 
 ```json
 {
@@ -88,11 +99,13 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ## Sección detallada por cada error
 
+---
+
 ### Error 1: Campos obligatorios faltantes
 
 ### Request - campos - obligatorios - faltantes
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -110,6 +123,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ---
 
 ### Response - campos - obligatorios - faltantes
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+**Response body:**
 
 ```json
 {
@@ -134,7 +152,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### Request - formato - inválido
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -153,6 +171,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ---
 
 ### Response - formato - inválido
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+**Response body:**
 
 ```json
 {
@@ -173,7 +196,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### Request - longitud - inválida
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -192,6 +215,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ---
 
 ### Response - longitud - inválida
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+**Response body:**
 
 ```json
 {
@@ -212,7 +240,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### Request - objeto - inválido
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -231,6 +259,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ---
 
 ### Response - objeto - inválido
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+**Response body:**
 
 ```json
 {
@@ -251,7 +284,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### Request - valor - inválido
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -270,6 +303,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ---
 
 ### Response - valor - inválido
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+**Response body:**
 
 ```json
 {
@@ -290,7 +328,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### Request - JSON - inválido
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -309,6 +347,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ---
 
 ### Response - JSON - inválido
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+**Response body:**
 
 ```json
 {
@@ -329,7 +372,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### Request - merchantId - duplicado
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -348,6 +391,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ---
 
 ### Response - merchantId - duplicado
+
+**Response code:**  
+`409 CONFLICT`
+
+**Response body:**
 
 ```json
 {
@@ -372,7 +420,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### Request - error - interno
 
-**Body**
+**Body:**
 
 ```json
 {
@@ -392,6 +440,11 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### Response - error - interno
 
+**Response code:**  
+`500 INTERNAL_SERVER_ERROR`
+
+**Response body:**
+
 ```json
 {
   "code": "500",
@@ -406,4 +459,3 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ```
 
 ---
-
