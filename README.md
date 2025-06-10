@@ -1,5 +1,4 @@
-# 4. Documentación de servicios (endpoints):
-
+# 4. Documentación de servicios (endpoints)
 En esta sección se describen ejemplos de creación exitosa y los principales casos de error para el endpoint **`createBrand`**. También se proporcionan enlaces a cada tipo de request y response para facilitar las pruebas funcionales y la correcta construcción de los requests.
 
 ---
