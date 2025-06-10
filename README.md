@@ -82,7 +82,7 @@ POST http://localhost:8080/api/v1/brands
 
 ---
 
-### 4.2 Ejemplos de casos de error en createBrand
+### 4.2 Casos de error en `createBrand`
 
 | **Tipo de error**              | **Breve descripción**                                       | **Request inválido**                                             | **Response de error esperado**                                     |
 | ------------------------------ | ----------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
