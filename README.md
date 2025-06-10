@@ -1,39 +1,46 @@
 # 4. TROUBLESHOOTING
 
-En esta sección se describen ejemplos de creación exitosa y los principales casos de error para el endpoint **`createCategory`**. También se proporcionan enlaces a cada tipo de request y response para facilitar las pruebas funcionales y la correcta construcción de los requests.
+En esta sección se describen ejemplos de creación exitosa y los principales casos de error para el endpoint **`createBrand`**. También se proporcionan enlaces a cada tipo de request y response para facilitar las pruebas funcionales y la correcta construcción de los requests.
 
 ---
 
-### 4.1 Ejemplo de creación exitosa -Endpoint: Categorías (createCategory)
+### 4.1 Ejemplo de creación exitosa -Endpoint: Marcas (createBrand)
 
 **URL:**  
-`http://localhost:8080/api/v1/categories`
+`http://localhost:8080/api/v1/brands`
 
-| **Servicio**                      | **Funcionalidad** | **Request válido**                            | **Response exitoso**                            |
-| --------------------------------- | ----------------- | --------------------------------------------- | ----------------------------------------------- |
-| `svc-virtualstore-co-manager-pdn` | `createCategory`  | [Ver JSON Request](#request---createCategory) | [Ver JSON Response](#response---createCategory) |
+| **Servicio**                      | **Funcionalidad** | **Request válido**                         | **Response exitoso**                         |
+| --------------------------------- | ----------------- | ------------------------------------------ | -------------------------------------------- |
+| `svc-virtualstore-co-manager-pdn` | `createBrand`     | [Ver JSON Request](#request---createbrand) | [Ver JSON Response](#response---createbrand) |
 
 ---
 
 ## Sección detallada de creación
 
-### Request - createCategory
+### Request - createBrand
 
 **Body**
 
 ```json
 {
-  "name": "Ropa",
-  "image": "https://cdn.example.com/logos/indu.png",
-  "createdBy": "Juan Julio",
-  "priority": 0,
-  "active": false
+  "merchantId": "17081",
+  "name": "Nike",
+  "description": "La mejor tienda online de electrónicos con ofertas exclusivas.",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/merchant123-cover.svg",
+  "fyf": {
+    "active": false,
+    "numbers": ["1234567891", "1239567896"]
+  },
+  "priority": 5,
+  "score": 80,
+  "createdBy": "afpernett"
 }
 ```
 
 ---
 
-### Response - createCategory
+### Response - createBrand
 
 ```json
 {
@@ -41,31 +48,42 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
   "message": "SUCCESS",
   "messageId": "peace757",
   "data": {
-    "id": "6846ea754ee0585b0fbde860",
-    "name": "Ropa",
-    "image": "https://cdn.example.com/logos/indu.png",
-    "creationDate": "2025-06-09T09:06:45.681093Z",
-    "modificationDate": "2025-06-09T09:06:45.681093Z",
-    "createdBy": "Juan Julio",
-    "priority": 0,
-    "active": false
+    "id": "6846e88c4ee0585b0fbde85f",
+    "merchantId": "17081",
+    "name": "Nike",
+    "description": "La mejor tienda online de electrónicos con ofertas exclusivas.",
+    "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+    "cover": "https://cdn.example.com/covers/merchant123-cover.svg",
+    "benefits": null,
+    "fyf": {
+      "active": false,
+      "numbers": ["3134356789", "3204567890"]
+    },
+    "priority": 5,
+    "score": 80.0,
+    "creationDate": "2025-06-09T08:58:35.296917Z",
+    "modificationDate": "2025-06-09T08:58:35.296917Z",
+    "createdBy": "afpernett",
+    "categories": null,
+    "tags": null
   }
 }
 ```
 
 ---
 
-### 4.2 Ejemplos de casos de error en createCategory
+### 4.2 Ejemplos de casos de error en createBrand
 
-| **Tipo de error**             | **Breve descripción**                                       | **Request inválido**                                             | **Response de error esperado**                                     |
-| ----------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Campos obligatorios faltantes | El request no incluye campos obligatorios                   | [Ver JSON Request](#request---campos---obligatorios---faltantes) | [Ver JSON Response](#response---campos---obligatorios---faltantes) |
-| Formato inválido              | Campos con formato incorrecto (por ejemplo, URL mal)        | [Ver JSON Request](#request---formato---inválido)                | [Ver JSON Response](#response---formato---inválido)                |
-| Tamaño o longitud de campos   | Un campo excede el tamaño permitido o es demasiado corto    | [Ver JSON Request](#request---longitud---inválida)               | [Ver JSON Response](#response---longitud---inválida)               |
-| Valor inválido                | Campo con valor no permitido (ej. `priority` negativo)      | [Ver JSON Request](#request---valor---inválido)                   | [Ver JSON Response](#response---valor---inválido)                   |
-| JSON mal formado              | JSON que no respeta la sintaxis(ej. comillas, llaves, etc.) | [Ver JSON Request](#request---JSON---inválido)                   | [Ver JSON Response](#response---JSON---inválido)                   |
-| Duplicidad de categoría       | El `name` de la categoría ya existe                         | [Ver JSON Request](#request---nombre---duplicado)                | [Ver JSON Response](#response---nombre---duplicado)                |
-| Error inesperado del servidor | Fallo interno no controlado                                 | [Ver JSON Request](#request---error---interno)                   | [Ver JSON Response](#response---error---interno)                   |
+| **Tipo de error**              | **Breve descripción**                                       | **Request inválido**                                             | **Response de error esperado**                                     |
+| ------------------------------ | ----------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Campos obligatorios faltantes  | El request no incluye campos obligatorios                   | [Ver JSON Request](#request---campos---obligatorios---faltantes) | [Ver JSON Response](#response---campos---obligatorios---faltantes) |
+| Formato inválido               | Campos con formato incorrecto (ej. URL mal)                 | [Ver JSON Request](#request---formato---inválido)                | [Ver JSON Response](#response---formato---inválido)                |
+| Tamaño o longitud de campos    | Un campo excede el tamaño permitido o es demasiado corto    | [Ver JSON Request](#request---longitud---inválida)               | [Ver JSON Response](#response---longitud---inválida)               |
+| Estructura inválida en objetos | Campos anidados con estructura o tipos erróneos             | [Ver JSON Request](#request---objeto---inválido)                 | [Ver JSON Response](#response---objeto---inválido)                 |
+| Valor inválido                 | Campo con valor no permitido (ej. `priority` negativo)      | [Ver JSON Request](#request---valor---inválido)                  | [Ver JSON Response](#response---valor---inválido)                  |
+| JSON mal formado               | JSON que no respeta la sintaxis(ej. comillas, llaves, etc.) | [Ver JSON Request](#request---JSON---inválido)                   | [Ver JSON Response](#response---JSON---inválido)                   |
+| Duplicidad de marca            | El **\*`merchantId`** de la marca ya existe                 | [Ver JSON Request](#request---merchantId---duplicado)            | [Ver JSON Response](#response---merchantId---duplicado)            |
+| Error inesperado del servidor  | Fallo interno no controlado                                 | [Ver JSON Request](#request---error---interno)                   | [Ver JSON Response](#response---error---interno)                   |
 
 ---
 
@@ -80,10 +98,13 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 ```json
 {
   "name": "",
-  "image": "https://cdn.example.com/logos/indu.png",
-  "createdBy": "Juan Julio",
-  "priority": 0,
-  "active": false
+  "description": "Test",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
+  "priority": 1,
+  "score": 50,
+  "createdBy": "afpernett"
 }
 ```
 
@@ -96,6 +117,10 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
   "code": "400",
   "message": "BAD_REQUEST",
   "errors": [
+    {
+      "field": "merchantId",
+      "message": "El campo merchantId es obligatorio."
+    },
     {
       "field": "name",
       "message": "El campo name es obligatorio."
@@ -114,11 +139,15 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ```json
 {
-  "name": "Calzado",
-  "image": "no-es-una-url",
-  "createdBy": "Juan Julio",
-  "priority": 0,
-  "active": false
+  "merchantId": "23016",
+  "name": "Tennis",
+  "description": "Test",
+  "logo": "no-es-una-url",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
+  "priority": 1,
+  "score": 50,
+  "createdBy": "afpernett"
 }
 ```
 
@@ -132,8 +161,8 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
   "message": "BAD_REQUEST",
   "errors": [
     {
-      "field": "image",
-      "message": "El campo image debe ser una URL válida."
+      "field": "logo",
+      "message": "El campo logo debe ser una URL válida."
     }
   ]
 }
@@ -149,11 +178,15 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ```json
 {
-  "name": "Moda",
-  "image": "https://cdn.example.com/logos/indu.png",
-  "createdBy": "Juan Julio",
-  "priority": 18,
-  "active": false
+  "merchantId": "23017",
+  "name": "Leo",
+  "description": "Test",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
+  "priority": -1,
+  "score": 50,
+  "createdBy": "afpernett"
 }
 ```
 
@@ -168,7 +201,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
   "errors": [
     {
       "field": "priority",
-      "message": "El campo priority debe ser un número con rango (0-15)."
+      "message": "El campo priority debe ser un número positivo, con rango (0-15)."
     }
   ]
 }
@@ -176,7 +209,46 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-### Error 4: Valor inválido
+### Error 4: Estructura inválida en objetos
+
+### Request - objeto - inválido
+
+**Body**
+
+```json
+{
+  "merchantId": "23018",
+  "name": "Koaj",
+  "description": "Test",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": "Información sobre Friends and Family",
+  "priority": 1,
+  "score": 50,
+  "createdBy": "afpernett"
+}
+```
+
+---
+
+### Response - objeto - inválido
+
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": "fyf",
+      "message": "El campo fyf debe ser un objeto con propiedades válidas."
+    }
+  ]
+}
+```
+
+---
+
+### Error 5: Valor inválido
 
 ### Request - valor - inválido
 
@@ -184,11 +256,15 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ```json
 {
-  "name": "Moda",
-  "image": "https://cdn.example.com/logos/indu.png",
-  "createdBy": "Juan Julio",
-  "priority": -1,
-  "active": false
+  "merchantId": "23010",
+  "name": "Calzatodo",
+  "description": "Test",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
+  "priority": 0,
+  "score": "ochenta",
+  "createdBy": "afpernett"
 }
 ```
 
@@ -202,8 +278,8 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
   "message": "BAD_REQUEST",
   "errors": [
     {
-      "field": "priority",
-      "message": "El campo priority no puede ser negativo, rango (0-15)."
+      "field": "score",
+      "message": "El campo score debe ser de tipo numérico."
     }
   ]
 }
@@ -211,7 +287,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-### Error 5: JSON mal formado
+### Error 6: JSON mal formado
 
 ### Request - JSON - inválido
 
@@ -219,11 +295,16 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ```json
 {
-  "name": "Calzado",
-  "image": "https://cdn.example.com/logos/indu.png",
-  "createdBy": "Juan Julio",
-  "priority": "0",
-  "active": false
+  "merchantId": "23015",
+  "name": "Flashy",
+  "description": "Test",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
+  "priority": 0,
+  "score": 8,
+  "createdBy": "afpernett"
+
 ```
 
 ---
@@ -245,25 +326,29 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-### Error 6: Categoría duplicada
+### Error 7: Marca duplicada
 
-### Request - nombre - duplicado
+### Request - merchantId - duplicado
 
 **Body**
 
 ```json
 {
-  "name": "Calzado",
-  "image": "https://cdn.example.com/logos/indu.png",
-  "createdBy": "Juan Julio",
+  "merchantId": "23017",
+  "name": "Leo",
+  "description": "Test",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
   "priority": 0,
-  "active": false
+  "score": 80,
+  "createdBy": "afpernett"
 }
 ```
 
 ---
 
-### Response - nombre - duplicado
+### Response - merchantId - duplicado
 
 ```json
 {
@@ -271,8 +356,12 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
   "message": "CONFLICT",
   "errors": [
     {
+      "field": "merchantId",
+      "message": "Ya existe una marca con el merchantId especificado."
+    },
+    {
       "field": "name",
-      "message": "Ya existe una categoría con este nombre."
+      "message": "Ya existe una marca con el nombre especificado."
     }
   ]
 }
@@ -280,7 +369,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-### Error 7: Error inesperado del servidor
+### Error 8: Error inesperado del servidor
 
 ### Request - error - interno
 
@@ -288,11 +377,15 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ```json
 {
-  "name": "Calzado",
-  "image": "https://cdn.example.com/logos/indu.png",
-  "createdBy": "Juan Julio",
+  "merchantId": "23055",
+  "name": "Citybags",
+  "description": "Test",
+  "logo": "https://nequi-bills-assets.s3.amazonaws.com/iconos_aliados/logo_leonisa_bills.svg",
+  "cover": "https://cdn.example.com/covers/valid.svg",
+  "fyf": { "active": false },
   "priority": 0,
-  "active": false
+  "score": 80,
+  "createdBy": "afpernett"
 }
 ```
 
@@ -307,7 +400,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
   "errors": [
     {
       "field": null,
-      "message": "Ha ocurrido un error inesperado. Por favor intente nuevamente más tarde."
+      "message": "Ha ocurrido un error inesperado. Intente nuevamente más tarde."
     }
   ]
 }
