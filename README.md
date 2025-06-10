@@ -92,7 +92,7 @@ POST http://localhost:8080/api/v1/brands
 | Estructura inválida en objetos | Campos anidados con estructura o tipos erróneos             | [Ver JSON Request](#request---objeto---inválido)                 | [Ver JSON Response](#response---objeto---inválido)                 |
 | Valor inválido                 | Campo con valor no permitido (ej. **`priority`** negativo)  | [Ver JSON Request](#request---valor---inválido)                  | [Ver JSON Response](#response---valor---inválido)                  |
 | JSON mal formado               | JSON que no respeta la sintaxis(ej. comillas, llaves, etc.) | [Ver JSON Request](#request---JSON---inválido)                   | [Ver JSON Response](#response---JSON---inválido)                   |
-| Duplicidad de marca            | El **\*`merchantId`** de la marca ya existe                 | [Ver JSON Request](#request---merchantId---duplicado)            | [Ver JSON Response](#response---merchantId---duplicado)            |
+| Duplicidad de marca            | El **`merchantId`** de la marca ya existe                   | [Ver JSON Request](#request---merchantId---duplicado)            | [Ver JSON Response](#response---merchantId---duplicado)            |
 | Error inesperado del servidor  | Fallo interno no controlado                                 | [Ver JSON Request](#request---error---interno)                   | [Ver JSON Response](#response---error---interno)                   |
 
 ---
