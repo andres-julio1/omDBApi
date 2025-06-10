@@ -70,9 +70,9 @@ POST http://localhost:8080/api/v1/categories
 | Campos obligatorios faltantes | El request no incluye campos obligatorios                   | [Ver JSON Request](#request---campos---obligatorios---faltantes) | [Ver JSON Response](#response---campos---obligatorios---faltantes) |
 | Formato inválido              | Campos con formato incorrecto (por ejemplo, URL mal)        | [Ver JSON Request](#request---formato---inválido)                | [Ver JSON Response](#response---formato---inválido)                |
 | Tamaño o longitud de campos   | Un campo excede el tamaño permitido o es demasiado corto    | [Ver JSON Request](#request---longitud---inválida)               | [Ver JSON Response](#response---longitud---inválida)               |
-| Valor inválido                | Campo con valor no permitido (ej. `priority` negativo)      | [Ver JSON Request](#request---valor---inválido)                  | [Ver JSON Response](#response---valor---inválido)                  |
+| Valor inválido                | Campo con valor no permitido (ej. **`priority`** negativo)  | [Ver JSON Request](#request---valor---inválido)                  | [Ver JSON Response](#response---valor---inválido)                  |
 | JSON mal formado              | JSON que no respeta la sintaxis(ej. comillas, llaves, etc.) | [Ver JSON Request](#request---JSON---inválido)                   | [Ver JSON Response](#response---JSON---inválido)                   |
-| Duplicidad de categoría       | El `name` de la categoría ya existe                         | [Ver JSON Request](#request---nombre---duplicado)                | [Ver JSON Response](#response---nombre---duplicado)                |
+| Duplicidad de categoría       | El **`name`** de la categoría ya existe                     | [Ver JSON Request](#request---nombre---duplicado)                | [Ver JSON Response](#response---nombre---duplicado)                |
 | Error inesperado del servidor | Fallo interno no controlado                                 | [Ver JSON Request](#request---error---interno)                   | [Ver JSON Response](#response---error---interno)                   |
 
 ---
@@ -345,3 +345,4 @@ POST http://localhost:8080/api/v1/categories
 ```
 
 ---
+
