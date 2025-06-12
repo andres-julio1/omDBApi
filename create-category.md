@@ -1,3 +1,4 @@
+[⬅ Volver a la tabla de endpoints](READMIN.md)
 # Sección detallada de creación (`createCategory`)
 **URL:** 
 ```http
