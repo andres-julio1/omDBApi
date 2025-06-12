@@ -1,6 +1,10 @@
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
-
 # Sección detallada de creación
+
+### Detalle técnico del endpoint createBrand
+
+Este documento describe en detalle el funcionamiento del endpoint createBrand, utilizado para registrar nuevas categorías en el sistema. A continuación se presentan la estructura del request y response JSON, junto con los posibles errores que pueden ocurrir durante su ejecución.
+
+### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
 
 **URL:**
 
@@ -74,8 +78,6 @@ POST http://localhost:8080/api/v1/brands
 
 ---
 
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
-
 ## Error 1: Campos obligatorios faltantes
 
 ### Request - campos - obligatorios - faltantes
@@ -125,8 +127,6 @@ POST http://localhost:8080/api/v1/brands
 
 ## Error 2: Formato inválido
 
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
-
 ### Request - formato - inválido
 
 **Body:**
@@ -170,8 +170,6 @@ POST http://localhost:8080/api/v1/brands
 ---
 
 ## Error 3: Longitud de campo inválido
-
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
 
 ### Request - longitud - inválida
 
@@ -217,8 +215,6 @@ POST http://localhost:8080/api/v1/brands
 
 ## Error 4: Estructura inválida en objetos
 
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
-
 ### Request - objeto - inválido
 
 **Body:**
@@ -262,8 +258,6 @@ POST http://localhost:8080/api/v1/brands
 ---
 
 ## Error 5: Valor inválido
-
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
 
 ### Request - valor - inválido
 
@@ -309,8 +303,6 @@ POST http://localhost:8080/api/v1/brands
 
 ## Error 6: JSON mal formado
 
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
-
 ### Request - JSON - inválido
 
 **Body:**
@@ -354,8 +346,6 @@ POST http://localhost:8080/api/v1/brands
 ---
 
 ## Error 7: Marca duplicada
-
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
 
 ### Request - merchantId - duplicado
 
@@ -405,8 +395,6 @@ POST http://localhost:8080/api/v1/brands
 
 ## Error 8: Error inesperado del servidor
 
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
-
 ### Request - error - interno
 
 **Body:**
@@ -446,5 +434,9 @@ POST http://localhost:8080/api/v1/brands
   ]
 }
 ```
+
+---
+
+### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
 
 ---
