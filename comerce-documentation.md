@@ -13,7 +13,7 @@
 | `commissionCashback`     | String (número en texto) | Comisión a entregar al usuario **`cashback`**, representa el % | Texto numérico positivo                                          | `"5"`                       |
 | `description`            | String                   | Descripción del comercio                                       | Texto enriquecido                                                | `"Mascotas"`                |
 | `documentNumber`         | String                   | Número de documento legal del comercio                         | Texto numérico, según tipo de documento                          | `"900157926"`               |
-| `documentType`           | String                   | Tipo de documento legal                                        | `"NIT"`, `"CC"`, `"CE"`, etc.                                    | `"NIT"`                     |
+| `documentType`           | String                   | Tipo de documento legal                                        | **`"NIT"`, `"CC"`, `"CE"`**, etc.                                    | `"NIT"`                     |
 | `name`                   | String                   | Nombre comercial visible                                       | Texto enriquecido                                                | `"Kanu Pets"`               |
 | `paymentMethods`         | Array                    | Métodos de pago habilitados para el comercio                   | Lista de objetos, ver tabla detallada: `paymentMethods`          | `[{...}]`                   |
 | `reverseTransactionType` | String                   | Código de transacción para reversos                            | Código definido por el sistema (alfanumérico)                    | `"X020"`                    |
