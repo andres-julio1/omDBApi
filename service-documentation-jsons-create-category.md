@@ -1,4 +1,4 @@
-[⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 # Sección detallada de creación (`createCategory`)
 
@@ -55,7 +55,7 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-[⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 ---
 
