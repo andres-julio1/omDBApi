@@ -4,7 +4,7 @@
 
 Este documento describe en detalle el funcionamiento del endpoint createBrand, utilizado para registrar nuevas categorías en el sistema. A continuación se presentan la estructura del request y response JSON, junto con los posibles errores que pueden ocurrir durante su ejecución.
 
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
+### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand.md)
 
 **URL:**
 
@@ -437,6 +437,6 @@ POST http://localhost:8080/api/v1/brands
 
 ---
 
-### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand-dos.md)
+### [Volver a la tabla de endpoints (`createBrand`)](service-documentation-endpoints-create-brand.md)
 
 ---
