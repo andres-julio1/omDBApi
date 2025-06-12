@@ -8,7 +8,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 | **Servicio**                | **Funcionalidad** | **Request válido**                                               | **Response exitoso**                                             |
 | --------------------------- | ----------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| `svc-store-co-managerjysr-` | `createCategory`  | [Ver JSON Request](createCategory.mdmd#request---createcategory) | [Ver JSON Response](createCategory.md#response---createcategory) |
+| `svc-store-co-managerjysr-` | `createCategory`  | [Ver JSON Request](createCategory.md#request---createcategory) | [Ver JSON Response](createCategory.md#response---createcategory) |
 
 ---
 
