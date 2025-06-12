@@ -6,9 +6,9 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ### 4.1 Crear categorías endpoint (`createCategory`)
 
-| **Servicio**                      | **Funcionalidad** | **Request válido**                            | **Response exitoso**                            |
-| --------------------------------- | ----------------- | --------------------------------------------- | ----------------------------------------------- |
-| `svc-virtualstore-co-manager-pdn` | `createCategory`  | [Ver JSON Request](#request-createcategory)   | [Ver JSON Response](#response-createcategory)  |
+| **Servicio**                      | **Funcionalidad** | **Request válido**                                             | **Response exitoso**                                             |
+| --------------------------------- | ----------------- | -------------------------------------------------------------- | ---------------------------------------------------------------  |
+| `svc-virtualstore-co-manager-pdn` | `createCategory`  | [Ver JSON Request](create-category#request---createcategory)   |  [Ver JSON Response](create-category#response---createcategory)  |
 
 ---
 
