@@ -1,3 +1,4 @@
+[⬅ Volver a la tabla de endpoints(`createCategory`)](README.md)
 
 # Sección detallada por cada error (`createCategory`)
 
