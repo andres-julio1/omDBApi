@@ -8,7 +8,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 | **Servicio**                      | **Funcionalidad** | **Request válido**                            | **Response exitoso**                            |
 | --------------------------------- | ----------------- | --------------------------------------------- | ----------------------------------------------- |
-| `svc-virtualstore-co-manager-pdn` | `createCategory`  | [Ver JSON Request](#request---createCategory) | [Ver JSON Response](#response---createCategory) |
+| `svc-virtualstore-co-manager-pdn` | `createCategory`  | [Ver JSON Request](#request-createcategory)   | [Ver JSON Response](#response-createcategory)  |
 
 ---
 
@@ -23,7 +23,7 @@ POST http://localhost:8080/api/v1/categories
 ---
 
 ### Request - createCategory
-
+<a name="request-createcategory"></a>
 **Body:**
 
 ```json
@@ -39,7 +39,7 @@ POST http://localhost:8080/api/v1/categories
 ---
 
 ### Response - createCategory
-
+<a name="response-createcategory"></a>
 **Response code:**  
 `200 OK`
 
