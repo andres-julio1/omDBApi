@@ -30,7 +30,7 @@
 | **Nombre Atributo**       | **Tipo**       | **Breve descripción**                                         | **Posibles Valores**               | **Ejemplo**                      |
 | ------------------------- | -------------- | ------------------------------------------------------------- | ---------------------------------- | -------------------------------- |
 | `identifierPaymentMethod` | Array (String) | Lista de identificadores únicos asociados a ese medio de pago | Array de texto alfanumérico        | `["identifier1", "identifier2"]` |
-| `type`                    | String         | Tipo de método de pago                                        | `"PSE"`,`"PHYSICAL_CARD"`,`"APIS"` | `"PSE"`                          |
+| `type`                    | String         | Tipo de método de pago                                        | **`"PSE"`,`"PHYSICAL_CARD"`,`"APIS"`** | `"PSE"`                          |
 
 ---
 
