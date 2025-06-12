@@ -4,7 +4,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-### 4.1 Crear categorías endpoint (`createCategory`)
+## 4.1 Crear categorías endpoint (`createCategory`)
 
 | **Servicio**                | **Funcionalidad** | **Request válido**                                                                       | **Response exitoso**                                                                       |
 | --------------------------- | ----------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -12,7 +12,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-### 4.2 Casos de error en `createCategory`
+## 4.2 Casos de error en `createCategory`
 
 | **Tipo de error**             | **Breve descripción**                                       | **Request inválido**                                                                                        | **Response de error esperado**                                                                                |
 | ----------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -25,3 +25,4 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 | Error inesperado del servidor | Fallo interno no controlado                                 | [Ver JSON Request](service-documentation-jsons-create-brand.md#request---error---interno)                   | [Ver JSON Response](service-documentation-jsons-create-brand.md#response---error---interno)                   |
 
 ---
+
