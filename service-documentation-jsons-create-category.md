@@ -1,4 +1,4 @@
-### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 # Sección detallada de creación (`createCategory`)
 
@@ -55,7 +55,7 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 ---
 
@@ -97,7 +97,7 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 ## Error 2: Formato inválido
 
@@ -137,7 +137,7 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 ## Error 3: Longitud de campo inválido
 
@@ -177,7 +177,7 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 ## Error 4: Valor inválido
 
@@ -217,7 +217,7 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 ## Error 5: JSON mal formado
 
@@ -256,7 +256,7 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 ## Error 6: Categoría duplicada
 
@@ -296,7 +296,7 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-### [⬅ Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints (`createCategory`)](service-documentation-endpoints-create-category-dos.md)
 
 ## Error 7: Error inesperado del servidor
 
