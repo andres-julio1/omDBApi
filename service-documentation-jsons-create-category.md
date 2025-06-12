@@ -4,7 +4,7 @@
 
 Este documento describe en detalle el funcionamiento del endpoint createCategory, utilizado para registrar nuevas categorías en el sistema. A continuación se presentan la estructura del request y response JSON, junto con los posibles errores que pueden ocurrir durante su ejecución.
 
-### [Volver a la tabla de endpoints `createCategory`](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints `createCategory`](service-documentation-endpoints-create-category.md)
 
 **URL:**
 
@@ -324,6 +324,6 @@ POST http://localhost:8080/api/v1/categories
 
 ---
 
-### [Volver a la tabla de endpoints `createCategory`](service-documentation-endpoints-create-category-dos.md)
+### [Volver a la tabla de endpoints `createCategory`](service-documentation-endpoints-create-category.md)
 
 ---
