@@ -14,6 +14,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 | `messageId`    | `string`           | Sí              | Identificador único para rastrear la petición |
 
 ---
+<a name="tabla-update-category"></a>
 ## Tabla de endponit updateCategory
 
 | **Servicio**                      | **Funcionalidad** | **Request válido**                                                                              | **Response exitoso**                                                                              |
