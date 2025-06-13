@@ -5,7 +5,7 @@
 ### Casos de error en `updateCategory`
 
 ## Error 1: Campos obligatorios faltantes
-
+<a name="request-campos-obligatorios-faltantes-update-category"></a>
 ### Request - campos - obligatorios - faltantes
 
 **Body:**
@@ -22,7 +22,7 @@
 ```
 
 ---
-
+<a name="response-campos-obligatorios-faltantes-update-category"></a>
 ### Response - campos - obligatorios - faltantes
 
 **Response code:**  
