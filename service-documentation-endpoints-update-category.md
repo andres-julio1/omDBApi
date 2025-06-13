@@ -19,4 +19,12 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 | --------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | `svc-virtualstore-co-manager-pdn` | `updateCategory`  | [Ver JSON Request](service-documentation-jsons-r-r-update-category.md#request---updateCategory) | [Ver JSON Response](service-documentation-jsons-r-r-update-category.md#response---updateCategory) |
 
+``
+
+### 4.2 Casos de error en `updateCategory`
+
+| **Tipo de error**               | **Breve descripción**                                                     | **Request inválido**                                                                                                                     | **Response de error sperado**                                                                                                              |
+| ------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Campos obligatorios faltantes` | El request no incluye campos obligatorios (ej. **`category` o `patams`**) | [Ver JSON Request](<service-documentation-jsons-error-update-category.md#request---campos---obligatorios---faltantes(`updateCategory`)>) | [Ver JSON Response](<service-documentation-jsons-error-update-category.md#response---campos---obligatorios---faltantes(`updateCategory`)>) |
+
 ---
