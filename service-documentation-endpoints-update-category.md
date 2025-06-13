@@ -6,7 +6,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ## 4.1 Actualizar categorías endpoint (`updateCategory`)
 
-## Encabezados Requeridos (Headers):
+## Tabla de encabezados Requeridos (Headers):
 
 | **Header**     | **Tipo**           | **Obligatorio** | **Descripción**                               |
 | -------------- | ------------------ | --------------- | --------------------------------------------- |
@@ -14,19 +14,19 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 | `messageId`    | `string`           | Sí              | Identificador único para rastrear la petición |
 
 ---
-<a name="tabla-update-category"></a>
+
 ## Tabla de endponit updateCategory
 
-| **Servicio**                      | **Funcionalidad** | **Request válido**                                                                              | **Response exitoso**                                                                              |
-| --------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `svc-virtualstore-co-manager-pdn` | `updateCategory`  | [Ver JSON Request](service-documentation-jsons-r-r-update-category.md#request---updateCategory) | [Ver JSON Response](service-documentation-jsons-r-r-update-category.md#response---updateCategory) |
+| **Servicio**                      | **Funcionalidad** | **Request válido**                                                                             | **Response exitoso**                                                                             |
+| --------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `svc-virtualstore-co-manager-pdn` | `updateCategory`  | [Ver JSON Request](service-documentation-jsons-r-r-update-category.md#request-update-category) | [Ver JSON Response](service-documentation-jsons-r-r-update-category.md#response-update-category) |
 
 ``
-<a name="tabla-error--update-category"></a>
+
 ### 4.2 Casos de error en `updateCategory`
 
-| **Tipo de error**               | **Breve descripción**                                                     | **Request inválido**                                                                                                                     | **Response de error sperado**                                                                                                              |
-| ------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `Campos obligatorios faltantes` | El request no incluye campos obligatorios (ej. **`category` o `patams`**) | [Ver JSON Request](service-documentation-jsons-error-update-category.md#request-campos-obligatorios-faltantes-update-category) | [Ver JSON Response](service-documentation-jsons-error-update-category.md#response-campos-obligatorios-faltantes-update-category) |
+| **Tipo de error**               | **Breve descripción**                                                     | **Request inválido**                                                                                                          | **Response de error sperado**                                                                                                    |
+| ------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `Campos obligatorios faltantes` | El request no incluye campos obligatorios (ej. **`category` o `patams`**) | [Ver JSON Request](service-documentation-jsons-error-update-category.md#request-campos-obligatorios-faltantes-update-categor) | [Ver JSON Response](service-documentation-jsons-error-update-category.md#response-campos-obligatorios-faltantes-update-category) |
 
 ---
