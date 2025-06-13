@@ -22,7 +22,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 | `svc-virtualstore-co-manager-pdn` | `updateCategory`  | [Ver JSON Request](service-documentation-jsons-r-r-update-category.md#request---updateCategory) | [Ver JSON Response](service-documentation-jsons-r-r-update-category.md#response---updateCategory) |
 
 ``
-
+<a name="tabla-error--update-category"></a>
 ### 4.2 Casos de error en `updateCategory`
 
 | **Tipo de error**               | **Breve descripción**                                                     | **Request inválido**                                                                                                                     | **Response de error sperado**                                                                                                              |
