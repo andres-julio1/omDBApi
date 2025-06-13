@@ -1,6 +1,6 @@
 # Sección detallada de la actualización
 
-### [Volver a la tabla de endpoints `updateCategory`](service-documentation-endpoints-update-category.md)
+### [Volver a la tabla de endpoints `updateCategory`](service-documentation-endpoints-update-category.md#tabla-update-category)
 
 ### Detalle técnico del endpoint updateCategory
 
