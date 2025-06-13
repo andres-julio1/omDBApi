@@ -1,5 +1,5 @@
 # Sección detallada por cada error
-### [Volver a la tabla de endpoints `updateCategory`](service-documentation-endpoints-update-category.md)
+### [Volver a la tabla de endpoints `updateCategory`](service-documentation-endpoints-update-category.md#tabla-error--update-category)
 ---
 
 ### Casos de error en `updateCategory`
