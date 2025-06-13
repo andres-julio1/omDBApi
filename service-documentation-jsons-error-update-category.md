@@ -6,7 +6,7 @@
 
 ## Error 1: Campos obligatorios faltantes
 
-### Request - campos - obligatorios - faltantes(`updateCategory`)
+### Request - campos - obligatorios - faltantes
 
 **Body:**
 
@@ -23,7 +23,7 @@
 
 ---
 
-### Response - campos - obligatorios - faltantes(`updateCategory`)
+### Response - campos - obligatorios - faltantes
 
 **Response code:**  
 `400 BAD_REQUEST`
