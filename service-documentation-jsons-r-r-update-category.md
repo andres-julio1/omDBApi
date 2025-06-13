@@ -16,7 +16,7 @@ Descripción:
 Este endpoint permite actualizar los campos de una categoría existente usando un identificador lógico (por ejemplo, el nombre actual de la categoría) y una lista de parámetros a modificar.
 
 ---
-
+<a name="request-update-category"></a>
 ### Request - updateCategory
 
 **Body:**
@@ -38,7 +38,7 @@ Este endpoint permite actualizar los campos de una categoría existente usando u
 ```
 
 ---
-
+<a name="response-update-category"></a>
 ### Response - updateCategory
 
 **Response code:**  
