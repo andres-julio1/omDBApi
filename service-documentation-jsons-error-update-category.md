@@ -107,6 +107,7 @@
 <a name="request-params-vacío-update-category"></a>
 
 ### Request - params - vacío (`updateCategory`)
+
 ```json
 {
   "params": [
@@ -116,8 +117,8 @@
     }
   ]
 }
-
 ```
+
 ---
 
 <a name="response-params-vacío-update-category"></a>
@@ -139,6 +140,45 @@
   ]
 }
 ```
+
 ---
 
-````
+## Error 4: Campo duplicado
+
+<a name="request-campo-duplicado-update-category"></a>
+
+### Request - campo - duplicado (`updateCategory`)
+
+```json
+{
+  "category": "Comida",
+  "params": [
+    {
+      "field": "name",
+      "value": "Cmonida Nueva"
+    },
+    {
+      "field": "name",
+      "value": "Comida Fria"
+    }
+  ]
+}
+```
+
+<a name="response-campo-duplicado-update-category"></a>
+
+### Response - campo - duplicado (`updateCategory`)
+
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": "params",
+      "message": "El campo 'name' está duplicado en los parámetros."
+    }
+  ]
+}
+
+```
