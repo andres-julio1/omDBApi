@@ -193,11 +193,11 @@
 
 ---
 
-## Error 4: Campo no permitido
+## Error 5: Campo no permitido
 
 <a name="request-campo-no-permitido-update-category"></a>
 
-### Request - campo - no - permitido
+### Request - campo - no - permitido (`updateCategory`)
 
 **Body:**
 
@@ -230,6 +230,49 @@
     {
       "field": "params[0].field",
       "message": "El campo 'id' no está permitido para ser actualizado."
+    }
+  ]
+}
+```
+
+---
+
+## Error 6: Categoría no encontrada
+
+<a name="request-categoría-no-encontrada-update-category"></a>
+
+### Response - categoría -no - encontrada (`updateCategory`)
+
+**Body:**
+
+```json
+{
+  "category": "Inexistente",
+  "params": [
+    {
+      "field": "name",
+      "value": "Cmonida Nueva"
+    }
+  ]
+}
+```
+
+---
+<a name="response-categoría-no-encontrada-update-category"></a>
+
+### Request - categoría -no - encontrada (`updateCategory`)
+
+**Response code:**  
+`404 NOT_FOUND`
+
+```json
+{
+  "code": "404",
+  "message": "CATEGORY_NOT_FOUND",
+  "errors": [
+    {
+      "field": "category",
+      "message": "La categoría 'Inexistente' no fue encontrada."
     }
   ]
 }
