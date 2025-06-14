@@ -4,7 +4,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-## 4.1 Actualizar categorías endpoint (`updateCategory`)
+## 4.1 Actualizar categoría endpoint (`updateCategory`)
 
 <a name="table-update-category"></a>
 
