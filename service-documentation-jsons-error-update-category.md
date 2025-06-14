@@ -258,6 +258,7 @@
 ```
 
 ---
+
 <a name="response-categoría-no-encontrada-update-category"></a>
 
 ### Request - categoría -no - encontrada (`updateCategory`)
@@ -277,4 +278,47 @@
   ]
 }
 ```
+
+---
+
+## Error 7: Error inesperado del servidor
+
+<a name="request-error-interno-update-category"></a>
+
+### Request - error - interno (`updateCategory`)
+
+**Body:**
+
+```json
+{
+  "category": "Comida",
+  "params": [{ "field": "name", "value": "Comida Nueva" }]
+}
+```
+
+---
+
+<a name="reponse-error-interno-update-category"></a>
+
+### Response - error - interno (`updateCategory`)
+
+**Response code:**  
+`500 INTERNAL_SERVER_ERROR`
+
+```json
+{
+  "code": "500",
+  "message": "INTERNAL_SERVER_ERROR",
+  "errors": [
+     {
+      "field": "internal",
+      "message": "Ha ocurrido un error inesperado al actualizar la categoría."
+     }
+  ]
+}
+ ```
+ ---
+
+ ### [Volver a la tabla de endpoints `updateCategory`](service-documentation-endpoints-update-category.md#table-error-update-category)
+
 ---
