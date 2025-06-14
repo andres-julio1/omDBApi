@@ -15,9 +15,9 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-## Tabla de endponit updateCategory
-
 <a name="table-update-category"></a>
+
+## Tabla de endponit updateCategory
 
 | **Tipo de error**               | **Breve descripción**                                                     | **Request inválido**                                                                                                          | **Response de error sperado**                                                                                                    |
 | ------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
