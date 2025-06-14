@@ -42,10 +42,6 @@
     {
       "field": "category",
       "message": "El campo category es obligatorio."
-    },
-    {
-      "field": "params",
-      "message": "El campo params es obligatorio."
     }
   ]
 }
