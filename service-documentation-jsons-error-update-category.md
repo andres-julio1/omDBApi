@@ -108,6 +108,8 @@
 
 ### Request - params - vacío (`updateCategory`)
 
+**Body:**
+
 ```json
 {
   "params": [
@@ -149,6 +151,8 @@
 
 ### Request - campo - duplicado (`updateCategory`)
 
+**Body:**
+
 ```json
 {
   "category": "Comida",
@@ -165,9 +169,14 @@
 }
 ```
 
+---
+
 <a name="response-campo-duplicado-update-category"></a>
 
 ### Response - campo - duplicado (`updateCategory`)
+
+**Response code:**  
+`400 BAD_REQUEST`
 
 ```json
 {
@@ -180,5 +189,49 @@
     }
   ]
 }
-
 ```
+
+---
+
+## Error 4: Campo no permitido
+
+<a name="request-campo-no-permitido-update-category"></a>
+
+### Request - campo - no - permitido
+
+**Body:**
+
+```json
+{
+  "category": "Comida",
+  "params": [
+    {
+      "field": "id",
+      "value": "123"
+    }
+  ]
+}
+```
+
+---
+
+<a name="response-campo-no-permitido-update-category"></a>
+
+### Response - campo - no - permitido (`updateCategory`)
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": "params[0].field",
+      "message": "El campo 'id' no está permitido para ser actualizado."
+    }
+  ]
+}
+```
+---
