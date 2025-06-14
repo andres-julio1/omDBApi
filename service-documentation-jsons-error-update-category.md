@@ -10,7 +10,7 @@
 
 <a name="request-campos-obligatorios-faltantes-update-category"></a>
 
-### Request - campos - obligatorios - faltantes(`updateCategory`)
+### Request - campos - obligatorios - faltantes (`updateCategory`)
 
 **Body:**
 
@@ -29,7 +29,7 @@
 
 <a name="response-campos-obligatorios-faltantes-update-category"></a>
 
-### Response - campos - obligatorios - faltantes(`updateCategory`)
+### Response - campos - obligatorios - faltantes (`updateCategory`)
 
 **Response code:**  
 `400 BAD_REQUEST`
@@ -108,6 +108,7 @@
 
 ```json
 {
+  "category": "Comida",
   "params": [
     {
       "field": "null",
