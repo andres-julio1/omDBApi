@@ -66,7 +66,7 @@
       "value": "Comida Nueva"
     },
     {
-      "field": "iamge",
+      "field": "image",
       "value": "nuevaImage.svg"
     }
   ]
