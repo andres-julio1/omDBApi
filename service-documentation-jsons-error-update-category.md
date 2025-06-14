@@ -4,7 +4,7 @@
 
 ---
 
-### Casos de error en `updateCategory`
+## Casos de error en `updateCategory`
 
 ## Error 1: Campos obligatorios faltantes
 
