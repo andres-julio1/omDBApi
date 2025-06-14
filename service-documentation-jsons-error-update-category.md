@@ -292,7 +292,12 @@
 ```json
 {
   "category": "Comida",
-  "params": [{ "field": "name", "value": "Comida Nueva" }]
+  "params": [
+    {
+      "field": "name",
+      "value": "Comida Nueva"
+    }
+   ]
 }
 ```
 
