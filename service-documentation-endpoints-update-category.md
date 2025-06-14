@@ -8,7 +8,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 <a name="table-update-category"></a>
 
-### Tabla de encabezados Requeridos (Headers):
+## Tabla de encabezados Requeridos (Headers):
 
 | **Header**     | **Tipo**           | **Obligatorio** | **Descripción**                               |
 | -------------- | ------------------ | --------------- | --------------------------------------------- |
