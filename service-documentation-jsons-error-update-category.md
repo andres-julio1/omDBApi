@@ -101,3 +101,44 @@
 ```
 
 ---
+
+## Error 3: Params vacío o mal formado
+
+<a name="request-params-vacío-update-category"></a>
+
+### Request - params - vacío (`updateCategory`)
+```json
+{
+  "params": [
+    {
+      "field": "null",
+      "value": "Nueva"
+    }
+  ]
+}
+
+```
+---
+
+<a name="response-params-vacío-update-category"></a>
+
+### Response - params - vacío (`updateCategory`)
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": "params[0].field",
+      "message": "El campo field no puede ser nulo o vacío."
+    }
+  ]
+}
+```
+---
+
+````
