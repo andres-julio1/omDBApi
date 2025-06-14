@@ -52,3 +52,52 @@
 ```
 
 ---
+
+## Error 2: JSON mal formado
+
+<a name="request-json-mal-formado-update-category"></a>
+
+### Request - JSON - mal - formado (`updateCategory`)
+
+**Body:**
+
+```json
+{
+  "category": "Comida",
+  "params": [
+    {
+      "field": "name",
+      "value": "Comida Nueva"
+    },
+    {
+      "field": "iamge",
+      "value": "nuevaImage.svg"
+    }
+  ]
+
+
+```
+
+---
+
+<a name="response-json-mal-formado-update-category"></a>
+
+### Response - JSON - mal - formado (`updateCategory`)
+
+**Response code:**  
+`400 BAD_REQUEST`
+
+```json
+{
+  "code": "400",
+  "message": "BAD_REQUEST",
+  "errors": [
+    {
+      "field": null,
+      "message": "Formato JSON inválido."
+    }
+  ]
+}
+```
+
+---
