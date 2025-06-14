@@ -29,9 +29,7 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 <a name="table-error-update-category"></a>
 
-| **Tipo de error** | **Breve descripción** | **Request inválido** | **Response de error sperado** |
-| ----------------- | --------------------- | -------------------- | ----------------------------- |
-|`Campos obligatorios faltantes`|El request no incluye campos obligatorios (ej. **`category` o `patams`**) |[Ver JSON Request](service-documentation-jsons-error-update-category.md#request-campos-obligatorios-faltantes-update-categor) |[Ver JSON Response](service-documentation-jsons-error-update-category.md#response-campos-obligatorios-faltantes-update-category) |
-
----
-
+| **Tipo de error**               | **Breve descripción**                                                     | **Request inválido**                                                                                                          | **Response de error sperado**                                                                                                    |
+| ------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `Campos obligatorios faltantes` | El request no incluye campos obligatorios (ej. **`category` o `patams`**) | [Ver JSON Request](service-documentation-jsons-error-update-category.md#request-campos-obligatorios-faltantes-update-categor) | [Ver JSON Response](service-documentation-jsons-error-update-category.md#response-campos-obligatorios-faltantes-update-category) |
+| `JSON mal formado`              | JSON que no respeta la sintaxis(ej. comillas, llaves, etc.)               | [Ver JSON Request](service-documentation-jsons-error-update-category.md#request-json-mal-formado-update-category)             | [Ver JSON Response](service-documentation-jsons-error-update-category.md#response-json-mal-formado-update-category)              |
