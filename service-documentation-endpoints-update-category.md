@@ -6,7 +6,9 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ## 4.1 Actualizar categorías endpoint (`updateCategory`)
 
-## Tabla de encabezados Requeridos (Headers):
+<a name="table-update-category"></a>
+
+### Tabla de encabezados Requeridos (Headers):
 
 | **Header**     | **Tipo**           | **Obligatorio** | **Descripción**                               |
 | -------------- | ------------------ | --------------- | --------------------------------------------- |
@@ -15,9 +17,17 @@ En esta sección se describen ejemplos de creación exitosa y los principales ca
 
 ---
 
-<a name="table-update-category"></a>
-
 ## Tabla de endponit updateCategory
+
+| **Servicio**                      | **Funcionalidad** | **Request válido**                                                                             | **Response exitoso**                                                                             |
+| --------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `svc-virtualstore-co-manager-pdn` | `updateCategory`  | [Ver JSON Request](service-documentation-jsons-r-r-update-category.md#request-update-category) | [Ver JSON Response](service-documentation-jsons-r-r-update-category.md#response-update-category) |
+
+---
+
+<a name="table-error-update-category"></a>
+
+### 4.2 Casos de error en `updateCategory`
 
 | **Tipo de error**               | **Breve descripción**                                                     | **Request inválido**                                                                                                          | **Response de error sperado**                                                                                                    |
 | ------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
