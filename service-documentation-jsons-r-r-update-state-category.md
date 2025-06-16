@@ -1,6 +1,6 @@
 # Sección detallada de la actualización de estado
 
-### [Volver a la tabla de endpoint `updateStateCategories`](service-documentation-endpoints-update-state-category.md#table-update-state-categories)
+### [Volver a la tabla de endpoints `updateStateCategories`](service-documentation-endpoints-update-state-category.md#table-update-state-categories)
 
 ### Detalle técnico del endpoint updateStateCategories
 
