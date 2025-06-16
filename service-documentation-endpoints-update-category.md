@@ -6,7 +6,7 @@ En esta sección se describen ejemplos de actualización exitosa y los principal
 
 ## 4.1 Actualizar categoría endpoint (`updateCategory`)
 
-## Tabla de encabezados Requeridos (Headers):
+## Tabla de encabezados Requeridos (Headers)
 
 | **Header**     | **Valor**          | **Obligatorio** | **Descripción**                               |
 | -------------- | ------------------ | --------------- | --------------------------------------------- |
