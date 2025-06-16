@@ -186,7 +186,7 @@ curl --location --request PUT 'http://localhost:8080/api/v1/categories/state' \
 
 ### Response - error - interno (`updateStateCategories`)
 
-\*Response code:\*\*  
+**Response code:**
 `500 INTERNAL_SERVER_ERROR`
 
 ```json
