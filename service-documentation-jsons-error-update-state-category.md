@@ -4,7 +4,7 @@
 
 ---
 
-## Casos de error en `updateStateCategories
+## Casos de error en updateStateCategories
 
 ## Error 1: Campos obligatorios faltantes
 
