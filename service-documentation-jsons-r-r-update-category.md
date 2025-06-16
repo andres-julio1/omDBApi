@@ -4,7 +4,7 @@
 
 ### Detalle técnico del endpoint updateCategory
 
-Este documento describe en detalle el funcionamiento del endpoint **`updateCategory`**, utilizado para actualizar categorías en el sistema. A continuación se presentan la estructura del request y response JSON, junto con los posibles errores que pueden ocurrir durante su ejecución.
+Este documento describe en detalle el funcionamiento del endpoint **`updateCategory`**, utilizado para actualizar categorías en el sistema. A continuación se presentan la estructura del request y response JSON.
 
 **URL:**
 
@@ -32,7 +32,7 @@ Este endpoint permite actualizar los campos de una categoría existente usando u
       "value": "Comida Nueva"
     },
     {
-      "field": "iamge",
+      "field": "image",
       "value": "nuevaImage.svg"
     }
   ]
@@ -67,4 +67,3 @@ Este endpoint permite actualizar los campos de una categoría existente usando u
 ```
 
 ---
-
