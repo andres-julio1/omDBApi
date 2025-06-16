@@ -4,7 +4,7 @@
 
 ---
 
-## Casos de error en `updateCategory`
+## Casos de error en assignCategories
 
 ## Error 1: JSON mal formado
 
