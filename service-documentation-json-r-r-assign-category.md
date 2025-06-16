@@ -4,7 +4,7 @@
 
 ### Detalle técnico del endpoint assignCategories
 
-Este documento describe en detalle el funcionamiento del endpoint **`assignCategories`**, utilizado para asinar categorías en el sistema. A continuación se presentan la estructura del request y response JSON.
+Este documento describe en detalle el funcionamiento del endpoint **`assignCategories`**, utilizado para asignar categorías a la marca en el sistema. A continuación se presentan la estructura del request y response JSON.
 
 **URL:**
 
