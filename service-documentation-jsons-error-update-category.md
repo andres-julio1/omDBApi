@@ -266,7 +266,7 @@
 ```json
 {
   "code": "404",
-  "message": "CATEGORY_NOT_FOUND",
+  "message": "NOT_FOUND",
   "errors": [
     {
       "field": "category",
@@ -290,11 +290,11 @@
 {
   "category": "Comida",
   "params": [
-    {
-      "field": "name",
-      "value": "Comida Nueva"
+    { 
+      "field": "name", 
+      "value": "Comida Nueva" 
     }
-   ]
+  ]
 }
 ```
 
