@@ -1,6 +1,6 @@
 # Sección detallada por cada error
 
-### [Volver a la tabla de endpoint `updateStateCategories`](service-documentation-endpoints-update-state-category.md#table-error-update-state-categories)
+### [Volver a la tabla de endpoints `updateStateCategories`](service-documentation-endpoints-update-state-category.md#table-error-update-state-categories)
 
 ---
 
