@@ -6,7 +6,7 @@ En esta sección se describen ejemplos de actualización de estados exitosa y lo
 
 ## 4.1 Actualizar estado de la categoría endpoint (`updateStateCategories`)
 
-## Tabla de encabezados Requeridos (Headers):
+## Tabla de encabezados Requeridos (Headers)
 
 | **Header**     | **Valor**          | **Obligatorio** | **Descripción**                               |
 | -------------- | ------------------ | --------------- | --------------------------------------------- |
