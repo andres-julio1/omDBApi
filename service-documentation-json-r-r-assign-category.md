@@ -2,7 +2,7 @@
 
 ### [Volver a la tabla de endpoints `assignCategories`](service-documentation-endpoints-assign-category.md#table-assign-categories)
 
-### Detalle técnico del endpoint assignCategory
+### Detalle técnico del endpoint assignCategories
 
 Este documento describe en detalle el funcionamiento del endpoint **`assignCategories`**, utilizado para asinar categorías en el sistema. A continuación se presentan la estructura del request y response JSON.
 
