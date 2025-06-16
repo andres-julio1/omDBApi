@@ -238,7 +238,7 @@
 
 <a name="request-categoría-no-encontrada-update-category"></a>
 
-### Response - categoría -no - encontrada (`updateCategory`)
+### Response - categoría - no - encontrada (`updateCategory`)
 
 **Body:**
 
@@ -258,7 +258,7 @@
 
 <a name="response-categoría-no-encontrada-update-category"></a>
 
-### Request - categoría -no - encontrada (`updateCategory`)
+### Request - categoría - no - encontrada (`updateCategory`)
 
 **Response code:**  
 `404 NOT_FOUND`
