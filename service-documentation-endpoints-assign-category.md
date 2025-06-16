@@ -6,7 +6,7 @@ En esta sección se describen ejemplos de asignación exitosa y los principales 
 
 ## 4.1 Asignar categorías a las marcas endpoint (`assignCategories`)
 
-## Tabla de encabezados Requeridos (Headers):
+## Tabla de encabezados Requeridos (Headers)
 
 | **Header**     | **Valor**          | **Obligatorio** | **Descripción**                               |
 | -------------- | ------------------ | --------------- | --------------------------------------------- |
